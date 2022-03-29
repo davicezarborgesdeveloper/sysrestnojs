@@ -1,0 +1,12 @@
+[
+    {
+        "codOp":"01",
+        "name":"Caixa",
+        "password":"12345"
+    },
+    {
+        "codOp":"02",
+        "name":"Garçom",
+        "password":"88888"
+    }
+]

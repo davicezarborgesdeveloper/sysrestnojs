@@ -1,0 +1,432 @@
+[
+	{
+	  "code": "1",
+	  "name": "ÁGUA MINERAL",
+	  "price": "3",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/mineral-water.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/drink.png"
+	},
+	{
+	  "code": "2",
+	  "name": "CAFÉ",
+	  "price": "7.50",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/coffee.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/drink.png"
+	},
+	{
+	  "code": "3",
+	  "name": "REFRIGERANTE",
+	  "price": "5.00",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": true,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/soda-can.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/drink.png"
+	},
+	{
+	  "code": "4",
+	  "name": "SUCO NATURAL",
+	  "price": "3",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/orange-juice.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/drink.png"
+	},
+	{
+	  "code": "5",
+	  "name": "CERVEJA",
+	  "price": "5",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/beers.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/drink.png"
+	},
+	{
+	  "code": "6",
+	  "name": "VINHO TINTO",
+	  "price": "15",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/wine.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/drink.png"
+	},
+	{
+	  "code": "13",
+	  "name": "CHOCOLATE",
+	  "price": "2",
+	  "category": "A5z46yGPMOC84dOdJfO2",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/chocolate.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/candies.png"
+	},
+	{
+	  "code": "14",
+	  "name": "BOMBOM",
+	  "price": "3",
+	  "category": "A5z46yGPMOC84dOdJfO2",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/bombom.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/candies.png"
+	},
+	{
+	  "code": "15",
+	  "name": "BALA",
+	  "price": "0",
+	  "category": "A5z46yGPMOC84dOdJfO2",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/candy.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/candies.png"
+	},
+	{
+	  "code": "16",
+	  "name": "CHICLETE",
+	  "price": "0",
+	  "category": "A5z46yGPMOC84dOdJfO2",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/gum.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/candies.png"
+	},
+	{
+	  "code": "42",
+	  "name": "HAMBURGUER SIMPLES",
+	  "price": "5.00",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/hamburger.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/snack.png"
+	},
+	{
+	  "code": "43",
+	  "name": "HAMBURGUER COMPLETO",
+	  "price": "5",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/hamburger.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/snack.png"
+	},
+	{
+	  "code": "44",
+	  "name": "X SALADA",
+	  "price": "6",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/hamburger.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/snack.png"
+	},
+	{
+	  "code": "45",
+	  "name": "X CALABRESA",
+	  "price": "6",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/hamburger.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/snack.png"
+	},
+	{
+	  "code": "46",
+	  "name": "X BACON",
+	  "price": "7",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/hamburger.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/snack.png"
+	},
+	{
+	  "code": "48",
+	  "name": "X TUDO",
+	  "price": "10",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/hamburger.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/snack.png"
+	},
+	{
+	  "code": "28",
+	  "name": "PORTUGUESA",
+	  "price": "40",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pizza.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+	},
+	{
+	  "code": "29",
+	  "name": "FRANGO",
+	  "price": "38",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pizza.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+	},
+	{
+	  "code": "30",
+	  "name": "QUATRO QUEIJOS",
+	  "price": "41",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pizza.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+	},
+	{
+	  "code": "31",
+	  "name": "CALABRESA",
+	  "price": "39",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pizza.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+	},
+	{
+	  "code": "32",
+	  "name": "CHAMPIGNON",
+	  "price": "42",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pizza.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+	},
+	{
+	  "code": "33",
+	  "name": "GORGONZOLA",
+	  "price": "40",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pizza.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+	},
+	{
+	  "code": "34",
+	  "name": "LOMBO",
+	  "price": "37",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pizza.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+	},
+	{
+	  "code": "35",
+	  "name": "PEPPERONI",
+	  "price": "41",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pizza.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+	},
+	{
+	  "code": "7",
+	  "name": "FILÉ MIGNON",
+	  "price": "20",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/file-mignon.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/dish.png"
+	},
+	{
+	  "code": "8",
+	  "name": "SALMÃO GRELHADO",
+	  "price": "20",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/salmon.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/dish.png"
+	},
+	{
+	  "code": "9",
+	  "name": "REFEIÇÃO SELF-SERVICE",
+	  "price": "0",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": true,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/meal.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/dish.png"
+	},
+	{
+	  "code": "10",
+	  "name": "PORÇÃO FRITAS",
+	  "price": "10",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/fried-potatoes.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/dish.png"
+	},
+	{
+	  "code": "11",
+	  "name": "PICANHA",
+	  "price": "30",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/meat.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/dish.png"
+	},
+	{
+	  "code": "12",
+	  "name": "SALADA",
+	  "price": "10",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/salad.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/dish.png"
+	},
+	{
+	  "code": "21",
+	  "name": "COXINHA DE FRANGO",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/coxinha.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/nachos.png"
+	},
+	{
+	  "code": "22",
+	  "name": "EMPADINHA",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/meat-pie.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/nachos.png"
+	},
+	{
+	  "code": "23",
+	  "name": "ESFIRRA DE CARNE",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/sfiha.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/nachos.png"
+	},
+	{
+	  "code": "24",
+	  "name": "ESFIRRA DE FRANGO",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/sfiha.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/nachos.png"
+	},
+	{
+	  "code": "25",
+	  "name": "RISOLE DE CARNE",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pasty.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/nachos.png"
+	},
+	{
+	  "code": "26",
+	  "name": "RISOLE DE FRANGO",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pasty.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/nachos.png"
+	},
+	{
+	  "code": "27",
+	  "name": "BOLINHA DE QUEIJO",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/bolas-de-queijo.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/nachos.png"
+	},
+	{
+	  "code": "17",
+	  "name": "PICOLÉ",
+	  "price": "3",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/picole.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/sweets.png"
+	},
+	{
+	  "code": "18",
+	  "name": "SORVETE",
+	  "price": "6",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/ice-cream.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/sweets.png"
+	},
+	{
+	  "code": "19",
+	  "name": "PUDIM",
+	  "price": "5",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/pudim.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/sweets.png"
+	},
+	{
+	  "code": "20",
+	  "name": "SALADA DE FRUTAS",
+	  "price": "5",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/fruit-salad.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/sweets.png"
+	},
+	{
+	  "code": "39",
+	  "name": "BOLO DE CHOCOLATE",
+	  "price": "30",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/chocolatecake.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/sweets.png"
+	},
+	{
+	  "code": "40",
+	  "name": "BOLO DE MORANGO",
+	  "price": "35",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/cake.png",
+	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/sweets.png"
+	}
+  ]

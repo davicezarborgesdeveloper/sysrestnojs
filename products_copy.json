@@ -1,0 +1,432 @@
+[
+	{
+	  "code": "1",
+	  "name": "ÁGUA MINERAL",
+	  "price": "3",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fmineral-water.png?alt=media&token=b8a885ac-bbef-477a-888f-89490a9251bc",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdrink.png?alt=media&token=64a5e8fe-afff-428c-aa2f-4cb3eb96d1c1"
+	},
+	{
+	  "code": "2",
+	  "name": "CAFÉ",
+	  "price": "7",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fcoffee.png?alt=media&token=6e3af55f-65a6-4341-b10d-a418de6766fa",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdrink.png?alt=media&token=64a5e8fe-afff-428c-aa2f-4cb3eb96d1c1"
+	},
+	{
+	  "code": "3",
+	  "name": "REFRIGERANTE",
+	  "price": "5",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fsoda-can.png?alt=media&token=60366b9e-8bfb-433d-a20c-9ac72b4c11e2",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdrink.png?alt=media&token=64a5e8fe-afff-428c-aa2f-4cb3eb96d1c1"
+	},
+	{
+	  "code": "4",
+	  "name": "SUCO NATURAL",
+	  "price": "3",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Forange-juice.png?alt=media&token=c3458435-ad80-418d-af7a-98ef1aefae80",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdrink.png?alt=media&token=64a5e8fe-afff-428c-aa2f-4cb3eb96d1c1"
+	},
+	{
+	  "code": "5",
+	  "name": "CERVEJA",
+	  "price": "5",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fbeers.png?alt=media&token=4c03d2ee-9b5e-4f65-b05f-994e584be025",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdrink.png?alt=media&token=64a5e8fe-afff-428c-aa2f-4cb3eb96d1c1"
+	},
+	{
+	  "code": "6",
+	  "name": "VINHO TINTO",
+	  "price": "15",
+	  "category": "fLqkL5Y1KvP0noLXONiX",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fwine.png?alt=media&token=014ccca8-9e85-4b94-a827-ac8014d22bbe",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdrink.png?alt=media&token=64a5e8fe-afff-428c-aa2f-4cb3eb96d1c1"
+	},
+	{
+	  "code": "13",
+	  "name": "CHOCOLATE",
+	  "price": "2",
+	  "category": "A5z46yGPMOC84dOdJfO2",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fchocolate.png?alt=media&token=d4403e24-9e65-4d9e-9753-3e7b75ccdb55",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fcandies.png?alt=media&token=cbe7a422-b6b9-4ce7-a868-1b653139100e"
+	},
+	{
+	  "code": "14",
+	  "name": "BOMBOM",
+	  "price": "3",
+	  "category": "A5z46yGPMOC84dOdJfO2",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fbombom.png?alt=media&token=64c1b40c-59e8-4e4f-a769-7001344b2309",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fcandies.png?alt=media&token=cbe7a422-b6b9-4ce7-a868-1b653139100e"
+	},
+	{
+	  "code": "15",
+	  "name": "BALA",
+	  "price": "0",
+	  "category": "A5z46yGPMOC84dOdJfO2",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fcandy.png?alt=media&token=b1f016f5-4958-42dc-a4fc-ca395ece452a",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fcandies.png?alt=media&token=cbe7a422-b6b9-4ce7-a868-1b653139100e"
+	},
+	{
+	  "code": "16",
+	  "name": "CHICLETE",
+	  "price": "0",
+	  "category": "A5z46yGPMOC84dOdJfO2",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fgum.png?alt=media&token=9ddd6f8f-41d6-43a6-911b-038d7022e906",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fcandies.png?alt=media&token=cbe7a422-b6b9-4ce7-a868-1b653139100e"
+	},
+	{
+	  "code": "42",
+	  "name": "HAMBURGUER SIMPLES",
+	  "price": "5",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fhamburger.png?alt=media&token=6bffcf76-4ca5-480c-b266-e72f8c098f5f",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsnack.png?alt=media&token=02a351e5-1ae7-42ad-a5b2-86c79ecda668"
+	},
+	{
+	  "code": "43",
+	  "name": "HAMBURGUER COMPLETO",
+	  "price": "5",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fhamburger.png?alt=media&token=6bffcf76-4ca5-480c-b266-e72f8c098f5f",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsnack.png?alt=media&token=02a351e5-1ae7-42ad-a5b2-86c79ecda668"
+	},
+	{
+	  "code": "44",
+	  "name": "X SALADA",
+	  "price": "6",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fhamburger.png?alt=media&token=6bffcf76-4ca5-480c-b266-e72f8c098f5f",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsnack.png?alt=media&token=02a351e5-1ae7-42ad-a5b2-86c79ecda668"
+	},
+	{
+	  "code": "45",
+	  "name": "X CALABRESA",
+	  "price": "6",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fhamburger.png?alt=media&token=6bffcf76-4ca5-480c-b266-e72f8c098f5f",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsnack.png?alt=media&token=02a351e5-1ae7-42ad-a5b2-86c79ecda668"
+	},
+	{
+	  "code": "46",
+	  "name": "X BACON",
+	  "price": "7",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fhamburger.png?alt=media&token=6bffcf76-4ca5-480c-b266-e72f8c098f5f",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsnack.png?alt=media&token=02a351e5-1ae7-42ad-a5b2-86c79ecda668"
+	},
+	{
+	  "code": "48",
+	  "name": "X TUDO",
+	  "price": "10",
+	  "category": "CDGRZYdzlfq6f3s8BzZo",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fhamburger.png?alt=media&token=6bffcf76-4ca5-480c-b266-e72f8c098f5f",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsnack.png?alt=media&token=02a351e5-1ae7-42ad-a5b2-86c79ecda668"
+	},
+	{
+	  "code": "28",
+	  "name": "PORTUGUESA",
+	  "price": "40",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpizza.png?alt=media&token=278724a9-1c8b-40da-9e0c-c6340b4b8c36",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fpizza.png?alt=media&token=06fca153-2203-45e6-8f47-3533d0a0e7a0"
+	},
+	{
+	  "code": "29",
+	  "name": "FRANGO",
+	  "price": "38",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpizza.png?alt=media&token=278724a9-1c8b-40da-9e0c-c6340b4b8c36",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fpizza.png?alt=media&token=06fca153-2203-45e6-8f47-3533d0a0e7a0"
+	},
+	{
+	  "code": "30",
+	  "name": "QUATRO QUEIJOS",
+	  "price": "41",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpizza.png?alt=media&token=278724a9-1c8b-40da-9e0c-c6340b4b8c36",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fpizza.png?alt=media&token=06fca153-2203-45e6-8f47-3533d0a0e7a0"
+	},
+	{
+	  "code": "31",
+	  "name": "CALABRESA",
+	  "price": "39",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpizza.png?alt=media&token=278724a9-1c8b-40da-9e0c-c6340b4b8c36",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fpizza.png?alt=media&token=06fca153-2203-45e6-8f47-3533d0a0e7a0"
+	},
+	{
+	  "code": "32",
+	  "name": "CHAMPIGNON",
+	  "price": "42",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpizza.png?alt=media&token=278724a9-1c8b-40da-9e0c-c6340b4b8c36",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fpizza.png?alt=media&token=06fca153-2203-45e6-8f47-3533d0a0e7a0"
+	},
+	{
+	  "code": "33",
+	  "name": "GORGONZOLA",
+	  "price": "40",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpizza.png?alt=media&token=278724a9-1c8b-40da-9e0c-c6340b4b8c36",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fpizza.png?alt=media&token=06fca153-2203-45e6-8f47-3533d0a0e7a0"
+	},
+	{
+	  "code": "34",
+	  "name": "LOMBO",
+	  "price": "37",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpizza.png?alt=media&token=278724a9-1c8b-40da-9e0c-c6340b4b8c36",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fpizza.png?alt=media&token=06fca153-2203-45e6-8f47-3533d0a0e7a0"
+	},
+	{
+	  "code": "35",
+	  "name": "PEPPERONI",
+	  "price": "41",
+	  "category": "mwnBQF3Cxm8ka9oa8pSr",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpizza.png?alt=media&token=278724a9-1c8b-40da-9e0c-c6340b4b8c36",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fpizza.png?alt=media&token=06fca153-2203-45e6-8f47-3533d0a0e7a0"
+	},
+	{
+	  "code": "7",
+	  "name": "FILÉ MIGNON",
+	  "price": "20",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Ffile-mignon.png?alt=media&token=15ded1e9-38ca-4797-8871-b987be4fffa0",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdish.png?alt=media&token=9ab58940-1280-4233-97ac-f76f7e4178ff"
+	},
+	{
+	  "code": "8",
+	  "name": "SALMÃO GRELHADO",
+	  "price": "20",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fsalmon.png?alt=media&token=1e016693-f497-41f6-a336-cdf90bdac108",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdish.png?alt=media&token=9ab58940-1280-4233-97ac-f76f7e4178ff"
+	},
+	{
+	  "code": "9",
+	  "name": "REFEIÇÃO SELF-SERVICE",
+	  "price": "0",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": true,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fmeal.png?alt=media&token=d45f0a68-0fdf-4227-8481-b2ccf632b47c",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdish.png?alt=media&token=9ab58940-1280-4233-97ac-f76f7e4178ff"
+	},
+	{
+	  "code": "10",
+	  "name": "PORÇÃO FRITAS",
+	  "price": "10",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Ffried-potatoes.png?alt=media&token=05a5705d-cb4f-4855-a68e-6430fe96c6e6",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdish.png?alt=media&token=9ab58940-1280-4233-97ac-f76f7e4178ff"
+	},
+	{
+	  "code": "11",
+	  "name": "PICANHA",
+	  "price": "30",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fmeat.png?alt=media&token=cc59d19a-ad6c-4c4a-ab7c-ffe9ecba48ce",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdish.png?alt=media&token=9ab58940-1280-4233-97ac-f76f7e4178ff"
+	},
+	{
+	  "code": "12",
+	  "name": "SALADA",
+	  "price": "10",
+	  "category": "1xoxBV8cEj7FML4gFMnd",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fsalad.png?alt=media&token=ecd99b34-7288-4298-b314-52dc3c18c4d8",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fdish.png?alt=media&token=9ab58940-1280-4233-97ac-f76f7e4178ff"
+	},
+	{
+	  "code": "21",
+	  "name": "COXINHA DE FRANGO",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fcoxinha.png?alt=media&token=b216292c-fb86-44e5-bdbd-cd82faea4ca9",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fnachos.png?alt=media&token=6df41cd3-f9f5-4d2d-97ed-a613335bbd05"
+	},
+	{
+	  "code": "22",
+	  "name": "EMPADINHA",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fmeat-pie.png?alt=media&token=2ce06c27-2b82-4ba2-aa92-f679ba42ae8f",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fnachos.png?alt=media&token=6df41cd3-f9f5-4d2d-97ed-a613335bbd05"
+	},
+	{
+	  "code": "23",
+	  "name": "ESFIRRA DE CARNE",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fsfiha.png?alt=media&token=0a3620e2-1670-4284-8188-37611745b55b",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fnachos.png?alt=media&token=6df41cd3-f9f5-4d2d-97ed-a613335bbd05"
+	},
+	{
+	  "code": "24",
+	  "name": "ESFIRRA DE FRANGO",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fsfiha.png?alt=media&token=0a3620e2-1670-4284-8188-37611745b55b",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fnachos.png?alt=media&token=6df41cd3-f9f5-4d2d-97ed-a613335bbd05"
+	},
+	{
+	  "code": "25",
+	  "name": "RISOLE DE CARNE",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpasty.png?alt=media&token=75dde088-08db-4e16-a1f2-86878aa44db9",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fnachos.png?alt=media&token=6df41cd3-f9f5-4d2d-97ed-a613335bbd05"
+	},
+	{
+	  "code": "26",
+	  "name": "RISOLE DE FRANGO",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpasty.png?alt=media&token=75dde088-08db-4e16-a1f2-86878aa44db9",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fnachos.png?alt=media&token=6df41cd3-f9f5-4d2d-97ed-a613335bbd05"
+	},
+	{
+	  "code": "27",
+	  "name": "BOLINHA DE QUEIJO",
+	  "price": "0",
+	  "category": "c5qoQ5pzmxGST3EHGrR3",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fbolas-de-queijo.png?alt=media&token=781d278f-6385-48cb-8d42-bbe32a12743b",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fnachos.png?alt=media&token=6df41cd3-f9f5-4d2d-97ed-a613335bbd05"
+	},
+	{
+	  "code": "17",
+	  "name": "PICOLÉ",
+	  "price": "3",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpicole.png?alt=media&token=b360ee4a-7aab-4bda-a49e-34e2dc56e592",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsweets.png?alt=media&token=5fe2db4a-e42f-4981-a6c6-62fe66ddc140"
+	},
+	{
+	  "code": "18",
+	  "name": "SORVETE",
+	  "price": "6",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fice-cream.png?alt=media&token=35b06715-2eb6-4e73-8a7f-66986f31eed6",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsweets.png?alt=media&token=5fe2db4a-e42f-4981-a6c6-62fe66ddc140"
+	},
+	{
+	  "code": "19",
+	  "name": "PUDIM",
+	  "price": "5",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fpudim.png?alt=media&token=209112a6-0343-44f1-842f-247d61ccb3e0",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsweets.png?alt=media&token=5fe2db4a-e42f-4981-a6c6-62fe66ddc140"
+	},
+	{
+	  "code": "20",
+	  "name": "SALADA DE FRUTAS",
+	  "price": "5",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Ffruit-salad.png?alt=media&token=4099de68-89ba-45c8-a9c7-9ecc34b9657c",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsweets.png?alt=media&token=5fe2db4a-e42f-4981-a6c6-62fe66ddc140"
+	},
+	{
+	  "code": "39",
+	  "name": "BOLO DE CHOCOLATE",
+	  "price": "30",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fchocolatecake.png?alt=media&token=6f821f5a-7d49-4cb9-bbcc-089074430df4",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsweets.png?alt=media&token=5fe2db4a-e42f-4981-a6c6-62fe66ddc140"
+	},
+	{
+	  "code": "40",
+	  "name": "BOLO DE MORANGO",
+	  "price": "35",
+	  "category": "HpJmYjw5tYUWGSY97PYlS",
+	  "requestQuantity": false,
+	  "allowsCombination": false,
+	  "image": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/product_icons%2F64px%2Fcake.png?alt=media&token=4b0c877e-b4e1-4bd2-8538-86f7076fa0f4",
+	  "imageCategory": "https://firebasestorage.googleapis.com/v0/b/sysrest-2faac.appspot.com/o/category_icons%2Fsweets.png?alt=media&token=5fe2db4a-e42f-4981-a6c6-62fe66ddc140"
+	}
+  ]

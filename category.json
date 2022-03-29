@@ -1,0 +1,37 @@
+[
+    {
+        "id":"1xoxBV8cEj7FML4gFMnd",
+        "name":"Restaurante",
+        "image":"https://diabasic-ounce.000webhostapp.com/images/category/dish.png"
+    },
+    {
+        "id":"A5z46yGPMOC84dOdJfO2",
+        "name":"Bombons",
+        "image":"https://diabasic-ounce.000webhostapp.com/images/category/candies.png"
+    },
+    {
+        "id":"CDGRZYdzlfq6f3s8BzZo",
+        "name":"Lanches",
+        "image":"https://diabasic-ounce.000webhostapp.com/images/category/snack.png"
+    },
+    {
+        "id":"HpJmYjw5tYUWGSY97PYlS",
+        "name":"Sobremesa",
+        "image":"https://diabasic-ounce.000webhostapp.com/images/category/sweets.png"
+    },
+    {
+        "id":"c5qoQ5pzmxGST3EHGrR3",
+        "name":"Salgados",
+        "image":"https://diabasic-ounce.000webhostapp.com/images/category/nachos.png"
+    },
+    {
+        "id":"fLqkL5Y1KvP0noLXONiX",
+        "name":"Bebidas",
+        "image":"https://diabasic-ounce.000webhostapp.com/images/category/drink.png"
+    },
+    {
+        "id":"mwnBQF3Cxm8ka9oa8pSr",
+        "name":"Pizzas",
+        "image":"https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+    }
+]
