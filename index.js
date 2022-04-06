@@ -128,9 +128,9 @@ app.get("/sysrest/api/getProdutosPorMesa", async function (req, res) {
     let productsF = JSON.parse(productFile);
     let list = [];
 
-    let table = tablesF.find(t => t['number'] == query)['products'];
+    let table = tablesF.find(t => parseInt(t['number']) == parseInt(query))['products'];
     table.forEach(function (item, index, array) {
-      let obj = productsF.find(p => p['code']===item['productId']);
+      let obj = productsF.find(p => p['code']===item['code']);
       obj.quantity = item['qtd'];
       list.push(obj);
     });
@@ -169,47 +169,180 @@ app.get("/sysrest/api/getProduto", async function (req, res) {
 });
 
 app.post("/sysrest/api/addProductTable", async function (req, res) {
-  var fs = require('fs');
+    var fs = require('fs');
     if(req.body.table != null && req.body.code != null && req.body.qtd != null) {
-      var table = req.body.table;
-      var produto = {"productId":`${req.body.code}`,"qtd":req.body.qtd}
-      const fileR = fs.readFileSync("teste.json");
-      const fileW = fs.createWriteStream("tables.json");
-      let fileObj = JSON.parse(fileR);
-      let index = fileObj.findIndex(o =>o['number']===table);
-      if(typeof fileObj[index]['products'] == "undefined"){
-        var products = [];
-        products.push(produto);
-        fileObj[index]['products'] = products;
-      }else {
-        fileObj[index]['products'].push(produto)
-      }
-      
-      var data = [];
-      fileObj.forEach(function (item, index, array) {
-
-        data.push(item);
-      //   // const jsonString = JSON.stringify(item);
-      });
-
-      fileW.write(JSON.stringify(data));
-      // for(let i = 0;i<fileObj.length;i++){}
-      // fileObj.forEach(function (item, index, array) {
-      //   const jsonString = JSON.stringify(item);
-      //   fileW.write(jsonString+"\n");
-      // });
-      fileW.end();
+      var produto = {"productId":makeId(20),"code":`${req.body.code}`,"qtd":req.body.qtd}
+      let objList = JSON.parse(fs.readFileSync("tables.json"));
+      updateTables(addProductTable(objList,req.body.table,produto));
     }
     res.status(200).json({
       "success": true,
       });
 });
 
+app.post("/sysrest/api/delProductTable", async function (req, res) {
+  var fs = require('fs');
+  if(req.body.table != null && req.body.productId != null) {
+    let objList = JSON.parse(fs.readFileSync("tables.json"));
+    let indexTable = objList.findIndex(o =>o['number']===req.body.table);
+    let indexProduct = objList[indexTable]['products'].findIndex(p=>p['productId']===req.body.productId);
+    if(indexProduct != -1){
+      objList[indexTable]['products'].splice(indexProduct,1);
+      objList[indexTable]=calculateTableTotal(objList[indexTable]);
+      updateTables(objList);
 
+      res.status(200).json({
+        "success": true,
+        });
+    }else{
+      res.status(417).json({
+        "success": false,
+        "message":"Produto inexistente"
+        });
+    }
+  }else{
+    res.status(500).json({
+      "success": false,
+      "message":"Parametros requeridos"
+      });
+  }
+});
+
+
+app.post("/sysrest/api/delTable", async function (req, res) {
+  var fs = require('fs');
+  if(req.query.id != null){
+    let objList = JSON.parse(fs.readFileSync("tables.json"));
+    let indexTable = objList.findIndex(o =>parseInt(o['number'])===parseInt(req.query.id));
+    if(indexTable != -1){  
+      objList[indexTable]['status'] = 0;
+      objList[indexTable]['total'] = "0.00";
+      delete objList[indexTable]['products'];
+      updateTables(objList);
+      res.status(200).json({
+        "success": true,
+        });
+    }else{
+      res.status(417).json({
+        "success": false,
+        "message":"Mesa inexistente"
+        });
+    }
+  }else{
+    res.status(500).json({
+      "success": false,
+      "message":"Parametros requeridos"
+      });
+  }
+});
+
+app.post("/sysrest/api/changeQtdProductTable", async function (req, res) {
+  var fs = require('fs');
+  if(req.body.table != null && req.body.productId != null && req.body.op != null){
+    let objList = JSON.parse(fs.readFileSync("tables.json"));
+    let indexTable = objList.findIndex(o =>o['number']===req.body.table);
+    if(indexTable != -1){
+      let indexProduct = objList[indexTable]['products'].findIndex(p=>p['productId']===req.body.productId);
+      if(indexTable != -1){
+        if(req.body.op === "add"){
+          objList[indexTable]['products'][indexProduct]['qtd'] += 1;
+        }else if(req.body.op === "sub"){
+          objList[indexTable]['products'][indexProduct]['qtd'] -= 1;
+        }
+        console.log(objList[indexTable]['products'][indexProduct]);
+        updateTables(objList);
+        res.status(200).json({
+          "success": true,
+        });
+      }else{
+        res.status(417).json({
+          "success": false,
+          "message":"Produto inexistente"
+        });
+      }
+    }else{
+      res.status(417).json({
+        "success": false,
+        "message":"Mesa inexistente"
+      });
+    }
+    
+  }else{
+    res.status(500).json({
+      "success": false,
+      "message":"Parametros requeridos"
+    });
+  }
+});
+app.post("/sysrest/api/changeProductTable", async function (req, res) {
+  if(req.body.tableFrom != null && req.body.tableTo != null && req.body.productId != null){
+
+  }else{
+    res.status(500).json({
+      "success": false,
+      "message":"Parametros requeridos"
+    });
+  }
+
+});
 
 app.listen(port, function () {
   console.log(`Servidor Web rodando na porta ${port}`);
 });
+
+
+
+function makeId(length){
+  var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+   return result;
+}
+
+function addProductTable(objList,numberTable,produto){
+  let index = objList.findIndex(o =>o['number']===numberTable);
+  if(typeof objList[index]['products'] == "undefined"){
+    var products = [];
+    products.push(produto);
+    
+    objList[index]['products'] = products;
+  }else {
+    objList[index]['products'].push(produto)
+  }
+  objList[index]['status'] = 1;
+  objList[index]=calculateTableTotal(objList[index]);
+  return objList;
+}
+
+function updateTables(objList){
+  var fs = require('fs');
+  var data = [];
+  objList.forEach(function (item, index, array) {
+    data.push(item);
+  });
+
+  const file = fs.createWriteStream("tables.json");
+
+  file.write(JSON.stringify(data));
+  file.end();
+}
+
+function calculateTableTotal(table){
+  let price = 0.00;
+  table['products'].forEach(function (item, index, array) {
+    var fs = require('fs');
+    const fileP = fs.readFileSync("products.json");
+    let products = JSON.parse(fileP);
+
+    let indexProduct = products.findIndex(o =>o['code']===item["code"]);
+    price += parseFloat(products[indexProduct]['price'])*item['qtd'];
+  });
+  table["total"] = `${price.toFixed(2)}`;
+  return table;
+}
 
 // app.get("/sysrest/api/criaMesas", async function (req, res) {
 //   let collectionName = "restaurantTables";
