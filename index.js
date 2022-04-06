@@ -1,5 +1,5 @@
 const express = require("express");
-const port = process.env.PORT || 9000;
+const port = 9000;
 const compression = require("compression");
 const path = require("path");
 const app = express();
@@ -166,6 +166,43 @@ app.get("/sysrest/api/getProduto", async function (req, res) {
       "message": "Faltam dados a serem informados",
     });
   }
+});
+
+app.post("/sysrest/api/addProductTable", async function (req, res) {
+  var fs = require('fs');
+    if(req.body.table != null && req.body.code != null && req.body.qtd != null) {
+      var table = req.body.table;
+      var produto = {"productId":`${req.body.code}`,"qtd":req.body.qtd}
+      const fileR = fs.readFileSync("teste.json");
+      const fileW = fs.createWriteStream("tables.json");
+      let fileObj = JSON.parse(fileR);
+      let index = fileObj.findIndex(o =>o['number']===table);
+      if(typeof fileObj[index]['products'] == "undefined"){
+        var products = [];
+        products.push(produto);
+        fileObj[index]['products'] = products;
+      }else {
+        fileObj[index]['products'].push(produto)
+      }
+      
+      var data = [];
+      fileObj.forEach(function (item, index, array) {
+
+        data.push(item);
+      //   // const jsonString = JSON.stringify(item);
+      });
+
+      fileW.write(JSON.stringify(data));
+      // for(let i = 0;i<fileObj.length;i++){}
+      // fileObj.forEach(function (item, index, array) {
+      //   const jsonString = JSON.stringify(item);
+      //   fileW.write(jsonString+"\n");
+      // });
+      fileW.end();
+    }
+    res.status(200).json({
+      "success": true,
+      });
 });
 
 

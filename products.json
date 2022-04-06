@@ -2,7 +2,7 @@
 	{
 	  "code": "1",
 	  "name": "ÁGUA MINERAL",
-	  "price": "3",
+	  "price": "3.00",
 	  "category": "fLqkL5Y1KvP0noLXONiX",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -32,7 +32,7 @@
 	{
 	  "code": "4",
 	  "name": "SUCO NATURAL",
-	  "price": "3",
+	  "price": "3.00",
 	  "category": "fLqkL5Y1KvP0noLXONiX",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -42,7 +42,7 @@
 	{
 	  "code": "5",
 	  "name": "CERVEJA",
-	  "price": "5",
+	  "price": "5.00",
 	  "category": "fLqkL5Y1KvP0noLXONiX",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -52,7 +52,7 @@
 	{
 	  "code": "6",
 	  "name": "VINHO TINTO",
-	  "price": "15",
+	  "price": "15.00",
 	  "category": "fLqkL5Y1KvP0noLXONiX",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -62,7 +62,7 @@
 	{
 	  "code": "13",
 	  "name": "CHOCOLATE",
-	  "price": "2",
+	  "price": "2.00",
 	  "category": "A5z46yGPMOC84dOdJfO2",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -72,7 +72,7 @@
 	{
 	  "code": "14",
 	  "name": "BOMBOM",
-	  "price": "3",
+	  "price": "3.00",
 	  "category": "A5z46yGPMOC84dOdJfO2",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -82,7 +82,7 @@
 	{
 	  "code": "15",
 	  "name": "BALA",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "A5z46yGPMOC84dOdJfO2",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -92,7 +92,7 @@
 	{
 	  "code": "16",
 	  "name": "CHICLETE",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "A5z46yGPMOC84dOdJfO2",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -112,7 +112,7 @@
 	{
 	  "code": "43",
 	  "name": "HAMBURGUER COMPLETO",
-	  "price": "5",
+	  "price": "5.00",
 	  "category": "CDGRZYdzlfq6f3s8BzZo",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -122,7 +122,7 @@
 	{
 	  "code": "44",
 	  "name": "X SALADA",
-	  "price": "6",
+	  "price": "6.00",
 	  "category": "CDGRZYdzlfq6f3s8BzZo",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -132,7 +132,7 @@
 	{
 	  "code": "45",
 	  "name": "X CALABRESA",
-	  "price": "6",
+	  "price": "6.00",
 	  "category": "CDGRZYdzlfq6f3s8BzZo",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -142,7 +142,7 @@
 	{
 	  "code": "46",
 	  "name": "X BACON",
-	  "price": "7",
+	  "price": "7.00",
 	  "category": "CDGRZYdzlfq6f3s8BzZo",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -152,7 +152,7 @@
 	{
 	  "code": "48",
 	  "name": "X TUDO",
-	  "price": "10",
+	  "price": "10.00",
 	  "category": "CDGRZYdzlfq6f3s8BzZo",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -162,7 +162,7 @@
 	{
 	  "code": "28",
 	  "name": "PORTUGUESA",
-	  "price": "40",
+	  "price": "40.00",
 	  "category": "mwnBQF3Cxm8ka9oa8pSr",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -172,7 +172,7 @@
 	{
 	  "code": "29",
 	  "name": "FRANGO",
-	  "price": "38",
+	  "price": "38.00",
 	  "category": "mwnBQF3Cxm8ka9oa8pSr",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -182,7 +182,7 @@
 	{
 	  "code": "30",
 	  "name": "QUATRO QUEIJOS",
-	  "price": "41",
+	  "price": "41.00",
 	  "category": "mwnBQF3Cxm8ka9oa8pSr",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -192,7 +192,7 @@
 	{
 	  "code": "31",
 	  "name": "CALABRESA",
-	  "price": "39",
+	  "price": "39.00",
 	  "category": "mwnBQF3Cxm8ka9oa8pSr",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -202,7 +202,7 @@
 	{
 	  "code": "32",
 	  "name": "CHAMPIGNON",
-	  "price": "42",
+	  "price": "42.00",
 	  "category": "mwnBQF3Cxm8ka9oa8pSr",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -212,7 +212,7 @@
 	{
 	  "code": "33",
 	  "name": "GORGONZOLA",
-	  "price": "40",
+	  "price": "40.00",
 	  "category": "mwnBQF3Cxm8ka9oa8pSr",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -222,7 +222,7 @@
 	{
 	  "code": "34",
 	  "name": "LOMBO",
-	  "price": "37",
+	  "price": "37.00",
 	  "category": "mwnBQF3Cxm8ka9oa8pSr",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -232,7 +232,7 @@
 	{
 	  "code": "35",
 	  "name": "PEPPERONI",
-	  "price": "41",
+	  "price": "41.00",
 	  "category": "mwnBQF3Cxm8ka9oa8pSr",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -242,7 +242,7 @@
 	{
 	  "code": "7",
 	  "name": "FILÉ MIGNON",
-	  "price": "20",
+	  "price": "20.00",
 	  "category": "1xoxBV8cEj7FML4gFMnd",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -252,7 +252,7 @@
 	{
 	  "code": "8",
 	  "name": "SALMÃO GRELHADO",
-	  "price": "20",
+	  "price": "20.00",
 	  "category": "1xoxBV8cEj7FML4gFMnd",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -262,7 +262,7 @@
 	{
 	  "code": "9",
 	  "name": "REFEIÇÃO SELF-SERVICE",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "1xoxBV8cEj7FML4gFMnd",
 	  "requestQuantity": false,
 	  "allowsCombination": true,
@@ -272,7 +272,7 @@
 	{
 	  "code": "10",
 	  "name": "PORÇÃO FRITAS",
-	  "price": "10",
+	  "price": "10.00",
 	  "category": "1xoxBV8cEj7FML4gFMnd",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -282,7 +282,7 @@
 	{
 	  "code": "11",
 	  "name": "PICANHA",
-	  "price": "30",
+	  "price": "30.00",
 	  "category": "1xoxBV8cEj7FML4gFMnd",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -292,7 +292,7 @@
 	{
 	  "code": "12",
 	  "name": "SALADA",
-	  "price": "10",
+	  "price": "10.00",
 	  "category": "1xoxBV8cEj7FML4gFMnd",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -302,7 +302,7 @@
 	{
 	  "code": "21",
 	  "name": "COXINHA DE FRANGO",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -312,7 +312,7 @@
 	{
 	  "code": "22",
 	  "name": "EMPADINHA",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -322,7 +322,7 @@
 	{
 	  "code": "23",
 	  "name": "ESFIRRA DE CARNE",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -332,7 +332,7 @@
 	{
 	  "code": "24",
 	  "name": "ESFIRRA DE FRANGO",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -342,7 +342,7 @@
 	{
 	  "code": "25",
 	  "name": "RISOLE DE CARNE",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -352,7 +352,7 @@
 	{
 	  "code": "26",
 	  "name": "RISOLE DE FRANGO",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -362,7 +362,7 @@
 	{
 	  "code": "27",
 	  "name": "BOLINHA DE QUEIJO",
-	  "price": "0",
+	  "price": "0.00",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -372,7 +372,7 @@
 	{
 	  "code": "17",
 	  "name": "PICOLÉ",
-	  "price": "3",
+	  "price": "3.00",
 	  "category": "HpJmYjw5tYUWGSY97PYlS",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -382,7 +382,7 @@
 	{
 	  "code": "18",
 	  "name": "SORVETE",
-	  "price": "6",
+	  "price": "6.00",
 	  "category": "HpJmYjw5tYUWGSY97PYlS",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -392,7 +392,7 @@
 	{
 	  "code": "19",
 	  "name": "PUDIM",
-	  "price": "5",
+	  "price": "5.00",
 	  "category": "HpJmYjw5tYUWGSY97PYlS",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -402,7 +402,7 @@
 	{
 	  "code": "20",
 	  "name": "SALADA DE FRUTAS",
-	  "price": "5",
+	  "price": "5.00",
 	  "category": "HpJmYjw5tYUWGSY97PYlS",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -412,7 +412,7 @@
 	{
 	  "code": "39",
 	  "name": "BOLO DE CHOCOLATE",
-	  "price": "30",
+	  "price": "30.00",
 	  "category": "HpJmYjw5tYUWGSY97PYlS",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -422,7 +422,7 @@
 	{
 	  "code": "40",
 	  "name": "BOLO DE MORANGO",
-	  "price": "35",
+	  "price": "35.00",
 	  "category": "HpJmYjw5tYUWGSY97PYlS",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
