@@ -249,7 +249,7 @@ app.post("/sysrest/api/changeQtdProductTable", async function (req, res) {
         }else if(req.body.op === "sub"){
           objList[indexTable]['products'][indexProduct]['qtd'] -= 1;
         }
-        console.log(objList[indexTable]['products'][indexProduct]);
+        objList[indexTable]=calculateTableTotal(objList[indexTable]);
         updateTables(objList);
         res.status(200).json({
           "success": true,
@@ -276,7 +276,8 @@ app.post("/sysrest/api/changeQtdProductTable", async function (req, res) {
 });
 app.post("/sysrest/api/changeProductTable", async function (req, res) {
   if(req.body.tableFrom != null && req.body.tableTo != null && req.body.productId != null){
-
+    let indexTable = objList.findIndex(o =>o['number']===req.body.table);
+    let indexProduct = objList[indexTable]['products'].findIndex(p=>p['productId']===req.body.productId);
   }else{
     res.status(500).json({
       "success": false,
