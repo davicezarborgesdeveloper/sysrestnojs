@@ -189,8 +189,12 @@ app.post("/sysrest/api/delProductTable", async function (req, res) {
     if(indexProduct != -1){
       objList[indexTable]['products'].splice(indexProduct,1);
       objList[indexTable]=calculateTableTotal(objList[indexTable]);
+      if(objList[indexTable]['products'].length == 0){
+        delete objList[indexTable]['products'];
+        objList[indexTable]['status'] = 0;
+        objList[indexTable]['total'] = "0.00";
+      }
       updateTables(objList);
-
       res.status(200).json({
         "success": true,
         });
@@ -243,13 +247,23 @@ app.post("/sysrest/api/changeQtdProductTable", async function (req, res) {
     let indexTable = objList.findIndex(o =>o['number']===req.body.table);
     if(indexTable != -1){
       let indexProduct = objList[indexTable]['products'].findIndex(p=>p['productId']===req.body.productId);
-      if(indexTable != -1){
+      if(indexProduct != -1){
         if(req.body.op === "add"){
           objList[indexTable]['products'][indexProduct]['qtd'] += 1;
         }else if(req.body.op === "sub"){
-          objList[indexTable]['products'][indexProduct]['qtd'] -= 1;
+          if(objList[indexTable]['products'][indexProduct]['qtd'] === 1){
+            objList[indexTable]['products'].splice(indexProduct,1);
+            if(objList[indexTable]['products'].length == 0){
+              objList[indexTable]['status'] = 0;
+              objList[indexTable]['total'] = "0.00";
+              delete objList[indexTable]['products'];
+            }
+          }
+          else
+            objList[indexTable]['products'][indexProduct]['qtd'] -= 1;            
         }
-        objList[indexTable]=calculateTableTotal(objList[indexTable]);
+        if(typeof objList[indexTable]['products'] !== "undefined")
+          objList[indexTable]=calculateTableTotal(objList[indexTable]);
         updateTables(objList);
         res.status(200).json({
           "success": true,
@@ -274,10 +288,40 @@ app.post("/sysrest/api/changeQtdProductTable", async function (req, res) {
     });
   }
 });
+
 app.post("/sysrest/api/changeProductTable", async function (req, res) {
+  var fs = require('fs');
   if(req.body.tableFrom != null && req.body.tableTo != null && req.body.productId != null){
-    let indexTable = objList.findIndex(o =>o['number']===req.body.table);
-    let indexProduct = objList[indexTable]['products'].findIndex(p=>p['productId']===req.body.productId);
+    if(req.body.tableFrom !== req.body.tableTo){
+      let objList = JSON.parse(fs.readFileSync("tables.json"));
+      let iTFrom = objList.findIndex(o =>o['number']===req.body.tableFrom);
+      if(iTFrom != -1){
+        let iPFrom = objList[iTFrom]['products'].findIndex(p=>p['productId']===req.body.productId);
+        let iTTo = objList.findIndex(o =>o['number']===req.body.tableTo);
+        if(iPFrom != -1 && iTTo != -1){
+          if(iTTo != -1){}
+          objList = addProductTable(objList,req.body.tableTo,objList[iTFrom]['products'][iPFrom]);
+          objList[iTFrom]['products'].splice(iPFrom,1);
+          if(objList[iTFrom]['products'].length == 0){
+            objList[iTFrom]['status'] = 0;
+            objList[iTFrom]['total'] = "0.00";
+            delete objList[iTFrom]['products'];
+          }else{
+            objList[iTFrom]=calculateTableTotal(objList[iTFrom]);
+          }
+          updateTables(objList);
+        }
+      }
+
+      res.status(200).json({
+        "success": true,
+      });
+    }else{
+      res.status(500).json({
+        "success": false,
+        "message":"As mesas deve ser diferentes"
+      });
+    }
   }else{
     res.status(500).json({
       "success": false,
@@ -343,6 +387,10 @@ function calculateTableTotal(table){
   });
   table["total"] = `${price.toFixed(2)}`;
   return table;
+}
+
+function print(str){
+  console.log(str);
 }
 
 // app.get("/sysrest/api/criaMesas", async function (req, res) {
