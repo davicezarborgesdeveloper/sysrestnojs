@@ -62,7 +62,7 @@
 	{
 	  "code": "13",
 	  "name": "CHOCOLATE",
-	  "price": "2.00",
+	  "price": "2.50",
 	  "category": "A5z46yGPMOC84dOdJfO2",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -82,7 +82,7 @@
 	{
 	  "code": "15",
 	  "name": "BALA",
-	  "price": "0.00",
+	  "price": "0.10",
 	  "category": "A5z46yGPMOC84dOdJfO2",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -92,7 +92,7 @@
 	{
 	  "code": "16",
 	  "name": "CHICLETE",
-	  "price": "0.00",
+	  "price": "0.20",
 	  "category": "A5z46yGPMOC84dOdJfO2",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -132,7 +132,7 @@
 	{
 	  "code": "45",
 	  "name": "X CALABRESA",
-	  "price": "6.00",
+	  "price": "6.50",
 	  "category": "CDGRZYdzlfq6f3s8BzZo",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -312,7 +312,7 @@
 	{
 	  "code": "22",
 	  "name": "EMPADINHA",
-	  "price": "0.00",
+	  "price": "0.50",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -322,7 +322,7 @@
 	{
 	  "code": "23",
 	  "name": "ESFIRRA DE CARNE",
-	  "price": "0.00",
+	  "price": "0.50",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -332,7 +332,7 @@
 	{
 	  "code": "24",
 	  "name": "ESFIRRA DE FRANGO",
-	  "price": "0.00",
+	  "price": "0.50",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -342,7 +342,7 @@
 	{
 	  "code": "25",
 	  "name": "RISOLE DE CARNE",
-	  "price": "0.00",
+	  "price": "0.50",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -352,7 +352,7 @@
 	{
 	  "code": "26",
 	  "name": "RISOLE DE FRANGO",
-	  "price": "0.00",
+	  "price": "0.50",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -362,7 +362,7 @@
 	{
 	  "code": "27",
 	  "name": "BOLINHA DE QUEIJO",
-	  "price": "0.00",
+	  "price": "0.50",
 	  "category": "c5qoQ5pzmxGST3EHGrR3",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -372,7 +372,7 @@
 	{
 	  "code": "17",
 	  "name": "PICOLÉ",
-	  "price": "3.00",
+	  "price": "3.50",
 	  "category": "HpJmYjw5tYUWGSY97PYlS",
 	  "requestQuantity": false,
 	  "allowsCombination": false,
@@ -428,5 +428,45 @@
 	  "allowsCombination": false,
 	  "image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/cake.png",
 	  "imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/sweets.png"
-	}
+	},
+	{
+		"code": "41",
+		"name": "BANDEJA DE SALGADOS GRANDE(50)",
+		"price": "20.00",
+		"category": "mwnBQF31KvP0noLXONiX",
+		"requestQuantity": false,
+		"allowsCombination": false,
+		"image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/salgados.png",
+		"imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/kitmeal.png"
+	  },
+	  {
+		"code": "42",
+		"name": "BANDEJA DE SALGADOS MEDIA(25)",
+		"price": "10.00",
+		"category": "HpJmYjw5tYUWGSY97PYlS",
+		"requestQuantity": false,
+		"allowsCombination": false,
+		"image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/salgados.png",
+		"imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/kitmeal.png"
+	  },
+	  {
+		"code": "43",
+		"name": "CENTO SALGADO",
+		"price": "35.00",
+		"category": "HpJmYjw5tYUWGSY97PYlS",
+		"requestQuantity": false,
+		"allowsCombination": false,
+		"image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/salgados.png",
+		"imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/kitmeal.png"
+	  },
+	  {
+		"code": "44",
+		"name": "KIT FESTA",
+		"price": "70.00",
+		"category": "HpJmYjw5tYUWGSY97PYlS",
+		"requestQuantity": false,
+		"allowsCombination": false,
+		"image": "https://diabasic-ounce.000webhostapp.com/images/products/64px/kitfesta.png",
+		"imageCategory": "https://diabasic-ounce.000webhostapp.com/images/category/kitmeal.png"
+	  }
   ]

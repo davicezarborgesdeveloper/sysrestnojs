@@ -118,27 +118,45 @@ app.get("/sysrest/api/getProdutosPorCategoria", async function (req, res){
 });
 
 app.get("/sysrest/api/getProdutosPorMesa", async function (req, res) {
+  
   var fs = require('fs');
   let tableFile = fs.readFileSync('tables.json');
   let productFile = fs.readFileSync('products.json');
-
   if(req.query.table!= "null"){
     var query = req.query.table;
     let tablesF = JSON.parse(tableFile);
     let productsF = JSON.parse(productFile);
     let list = [];
-
-    let table = tablesF.find(t => parseInt(t['number']) == parseInt(query))['products'];
-    table.forEach(function (item, index, array) {
-      let obj = productsF.find(p => p['code']===item['code']);
-      obj.quantity = item['qtd'];
-      list.push(obj);
-    });
-   
-    res.status(200).json({
-      "success": true,
-      "result":list,
+    let table = tablesF.find(t => parseInt(t['number']) == parseInt(query))["products"];
+    if(typeof table !== "undefined"){
+      table.forEach(function (item, index, array) {
+        var obj = 'null';
+        obj = productsF.find(p => p['code']===item['code']);
+        list.push({
+          "code":item['code'],
+          "name": obj["name"],
+        "price": obj["price"],
+        "category": obj["category"],
+        "requestQuantity": obj["requestQuantity"],
+        "allowsCombination": obj["allowsCombination"],
+        "image": obj["image"],
+        "imageCategory": obj["imageCategory"],
+        "productId":item['productId'],
+        "quantity": item['qtd']});
       });
+      res.status(200).json({
+        "success": true,
+        "result":list,
+        });
+    }else{
+      res.status(200).json({
+        "success": true,
+        "message": "mesa vazia",
+        });
+    }
+    
+   
+   
   }else{
     res.status(417).json({
       "success": false,
@@ -170,14 +188,26 @@ app.get("/sysrest/api/getProduto", async function (req, res) {
 
 app.post("/sysrest/api/addProductTable", async function (req, res) {
     var fs = require('fs');
-    if(req.body.table != null && req.body.code != null && req.body.qtd != null) {
-      var produto = {"productId":makeId(20),"code":`${req.body.code}`,"qtd":req.body.qtd}
+    if(req.body.table != null && req.body.code != null && req.body.qtd != null && req.body.productId != null) {
       let objList = JSON.parse(fs.readFileSync("tables.json"));
-      updateTables(addProductTable(objList,req.body.table,produto));
+      let prodList = JSON.parse(fs.readFileSync("products.json"));
+      let indexTable = objList.findIndex(o =>o['number']===req.body.table);
+      let indexProduct =  prodList.findIndex(o =>o['code']===req.body.code);
+
+      if(indexTable != -1 && indexProduct != -1){
+        var produto = {"productId":`${req.body.productId}`,"code":`${req.body.code}`,"unitPrice":`${prodList[indexProduct]["price"]}`,"qtd":req.body.qtd}
+        updateTables(addProductTable(objList,req.body.table,produto));
+        res.status(200).json({
+          "success": true,
+          });
+      }else{
+        res.status(500).json({
+          "success": false,
+          "message":"Mesa e/ou produto inesistentes"
+          });
+      }
     }
-    res.status(200).json({
-      "success": true,
-      });
+   
 });
 
 app.post("/sysrest/api/delProductTable", async function (req, res) {
@@ -213,7 +243,7 @@ app.post("/sysrest/api/delProductTable", async function (req, res) {
 });
 
 
-app.post("/sysrest/api/delTable", async function (req, res) {
+app.get("/sysrest/api/delTable", async function (req, res) {
   var fs = require('fs');
   if(req.query.id != null){
     let objList = JSON.parse(fs.readFileSync("tables.json"));
@@ -241,6 +271,7 @@ app.post("/sysrest/api/delTable", async function (req, res) {
 });
 
 app.post("/sysrest/api/changeQtdProductTable", async function (req, res) {
+
   var fs = require('fs');
   if(req.body.table != null && req.body.productId != null && req.body.op != null){
     let objList = JSON.parse(fs.readFileSync("tables.json"));
@@ -249,7 +280,8 @@ app.post("/sysrest/api/changeQtdProductTable", async function (req, res) {
       let indexProduct = objList[indexTable]['products'].findIndex(p=>p['productId']===req.body.productId);
       if(indexProduct != -1){
         if(req.body.op === "add"){
-          objList[indexTable]['products'][indexProduct]['qtd'] += 1;
+          objList[indexTable][
+            'products'][indexProduct]['qtd'] += 1;
         }else if(req.body.op === "sub"){
           if(objList[indexTable]['products'][indexProduct]['qtd'] === 1){
             objList[indexTable]['products'].splice(indexProduct,1);
@@ -447,3 +479,5 @@ function print(str){
 //       .json({ success: false, result: null, message: "Quantidade inválida" });
 //   }
 // });
+
+//   Kit festa escolhe 100 salgados escolhe 1 bolo e 3 refrigerante

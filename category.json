@@ -33,5 +33,10 @@
         "id":"mwnBQF3Cxm8ka9oa8pSr",
         "name":"Pizzas",
         "image":"https://diabasic-ounce.000webhostapp.com/images/category/pizza.png"
+    },
+    {
+        "id":"mwnBQF31KvP0noLXONiX",
+        "name":"Kits",
+        "image":"https://diabasic-ounce.000webhostapp.com/images/category/kitmeal.png"
     }
 ]
