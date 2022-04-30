@@ -354,6 +354,39 @@ app.post("/sysrest/api/changeProductTable", async function (req, res) {
   }
 });
 
+app.get("/sysrest/api/criar", async function (req, res) {
+  if(req.query.qtd != null && req.query.op != null){
+    var qtd = req.query.qtd;
+    var fileName = req.query.op == 't'?"tables.json":"manager.json";
+    const file = fs.createWriteStream(fileName);
+    data = [];
+    for(let i = 0; i < qtd; i++){
+      if(req.query.op == 't'){
+        data.push({
+          "number":`${(i+1)<10?'0'+(i+1):(i+1)}`,
+          "lugares": 4,
+          "status": 0,
+          "total": "0.00",
+        });
+      }else{
+        data.push({
+          "number":`${(i+1)<10?'0'+(i+1):(i+1)}`,
+          "status": 0,
+          "total": "0.00",
+        });
+      }
+    }
+
+    file.write(JSON.stringify(data));
+    file.end();
+    requestStatus(res,200,true,"Mesas geradas com sucesso");
+  }else{
+    requestStatus(res,500,false,"Parâmetros requeridos");
+  }
+ 
+  
+});
+
 app.listen(port, function () {
   console.log(`Servidor Web rodando na porta ${port}`);
 });
@@ -456,59 +489,64 @@ function print(str){
   console.log(str);
 }
 
-// app.get("/sysrest/api/criaMesas", async function (req, res) {
-//   let collectionName = "restaurantTables";
-//   if (req.query.qtd != null && req.query.qtd > 0) {
-//     let querySnapshot = await db.collection(collectionName).get();
-//     if (querySnapshot.empty) {
-//       try{
-//         for(let i = 0; i < req.query.qtd;i++){
-//           await db.collection(collectionName).doc(`${i+1}`).set({
-//             number: `${i+1}`,
-//             lugares: 4,
-//             status: 0,
-//             total: "0.00",
-//           });
-//           console.log(`Completado ${i+1}`);
-//         }
-//         res
-//         .status(200)
-//         .json({ success: true, message: "Mesas geradas com sucesso" });
-//       }catch(e){
-//         console.log(e);
-//         res
-//         .status(417)
-//         .json({ success: false, message: "Erro ao gerar mesas" });
-//       }
+app.get("/sysrest/api/criasar", async function (req, res) {
+  var fileName = req.query.op == 't'?"tables.json":"comanda.json";
+  // const file = fs.createWriteStream("tables.json");
+
+  // file.write(JSON.stringify(data));
+  // file.end();
+  // let collectionName = "restaurantTables";
+  // if (req.query.qtd != null && req.query.qtd > 0) {
+  //   let querySnapshot = await db.collection(collectionName).get();
+  //   if (querySnapshot.empty) {
+  //     try{
+  //       for(let i = 0; i < req.query.qtd;i++){
+  //         await db.collection(collectionName).doc(`${i+1}`).set({
+  //           number: `${i+1}`,
+  //           lugares: 4,
+  //           status: 0,
+  //           total: "0.00",
+  //         });
+  //         console.log(`Completado ${i+1}`);
+  //       }
+  //       res
+  //       .status(200)
+  //       .json({ success: true, message: "Mesas geradas com sucesso" });
+  //     }catch(e){
+  //       console.log(e);
+  //       res
+  //       .status(417)
+  //       .json({ success: false, message: "Erro ao gerar mesas" });
+  //     }
       
-//     } else {
-//       try{
-//         const table = await db.collection(collectionName).get();
-//         let initIndex = table.docs.length+1;
-//         for(let i = 0; i < req.query.qtd;i++){
-//           await db.collection(collectionName).doc(`${initIndex+i}`).set({
-//             number: `${initIndex+i}`,
-//             lugares: 4,
-//             status: 0,
-//             total: "0.00",
-//           });
-//           console.log(`Completado ${i+1}`);
-//         }
-//         res
-//         .status(200)
-//         .json({ success: true, message: "Mesas geradas com sucesso" });
-//       }catch(e){
-//         res
-//         .status(417)
-//         .json({ success: false, message: "Erro ao gerar mesas" });
-//       }
+  //   } else {
+  //     try{
+  //       const table = await db.collection(collectionName).get();
+  //       let initIndex = table.docs.length+1;
+  //       for(let i = 0; i < req.query.qtd;i++){
+  //         await db.collection(collectionName).doc(`${initIndex+i}`).set({
+  //           number: `${initIndex+i}`,
+  //           lugares: 4,
+  //           status: 0,
+  //           total: "0.00",
+  //         });
+  //         console.log(`Completado ${i+1}`);
+  //       }
+  //       res
+  //       .status(200)
+  //       .json({ success: true, message: "Mesas geradas com sucesso" });
+  //     }catch(e){
+  //       res
+  //       .status(417)
+  //       .json({ success: false, message: "Erro ao gerar mesas" });
+  //     }
       
-//     }
-//   } else {
-//     res
-//       .status(417)
-//       .json({ success: false, result: null, message: "Quantidade inválida" });
-//   }
-// });
+  //   }
+  // } else {
+  //   res
+  //     .status(417)
+  //     .json({ success: false, result: null, message: "Quantidade inválida" });
+  // }
+});
 
 //   Kit festa escolhe 100 salgados escolhe 1 bolo e 3 refrigerante
