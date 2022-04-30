@@ -9,14 +9,8 @@ app.set("views", path.join(__dirname, "static", "views"));
 app.set("view engine", "ejs");
 app.use(compression());
 app.use("/public", express.static(path.join(__dirname, "static", "public")));
-var admin = require("firebase-admin");
-var serviceAccount = require("./serviceAccountKey.json");
-var Request = require("request");
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
+var fs = require('fs');
 
-let db = admin.firestore();
 
 app.get("/sysrest/api/datahora", async function (req, res) {
   let date_ob = new Date();
@@ -321,46 +315,43 @@ app.post("/sysrest/api/changeQtdProductTable", async function (req, res) {
   }
 });
 
-app.post("/sysrest/api/changeProductTable", async function (req, res) {
-  var fs = require('fs');
-  if(req.body.tableFrom != null && req.body.tableTo != null && req.body.productId != null){
-    if(req.body.tableFrom !== req.body.tableTo){
-      let objList = JSON.parse(fs.readFileSync("tables.json"));
-      let iTFrom = objList.findIndex(o =>o['number']===req.body.tableFrom);
-      if(iTFrom != -1){
-        let iPFrom = objList[iTFrom]['products'].findIndex(p=>p['productId']===req.body.productId);
-        let iTTo = objList.findIndex(o =>o['number']===req.body.tableTo);
-        if(iPFrom != -1 && iTTo != -1){
-          if(iTTo != -1){}
-          objList = addProductTable(objList,req.body.tableTo,objList[iTFrom]['products'][iPFrom]);
-          objList[iTFrom]['products'].splice(iPFrom,1);
-          if(objList[iTFrom]['products'].length == 0){
-            objList[iTFrom]['status'] = 0;
-            objList[iTFrom]['total'] = "0.00";
-            delete objList[iTFrom]['products'];
-          }else{
-            objList[iTFrom]=calculateTableTotal(objList[iTFrom]);
-          }
-          updateTables(objList);
-        }
-      }
+// Refactor Code Start
 
-      res.status(200).json({
-        "success": true,
-      });
+app.post("/sysrest/api/changeProductTable", async function (req, res) {
+  var body = req.body;
+  if(body.tableFrom != null && body.tableTo != null && body.productId != null){
+    var pidList = body.productId;
+    if(body.tableFrom !== body.tableTo){
+      let tableList = JSON.parse(fs.readFileSync("tables.json"));
+      let indexFrom = tableList.findIndex(obj => obj['number']===body.tableFrom);
+      let indexTo = tableList.findIndex(obj => obj['number']===body.tableTo);
+      if(indexFrom != -1 && indexTo != -1){
+        let indexProduct = -10
+        let prodFrom = [];
+        for(let i = 0; i < pidList.length; i++){
+          indexProduct = tableList[indexFrom]['products'].findIndex(prod => prod['productId'] === pidList[i]);
+          if(indexProduct !== -1){
+            prodFrom.push(tableList[indexFrom]['products'][indexProduct]);            
+          }else{
+            break;
+          }
+        }
+        if(indexProduct == -1){
+          requestStatus(res,500,false,"produto inexistente na mesa de origem");
+        }else{
+          tableList=changeListProductTable(tableList,indexFrom,indexTo,prodFrom);
+          updateTables(tableList);
+          requestStatus(res,200,true,"Mesas atualizadas com sucesso");
+        }
+      }else{
+        requestStatus(res,500,false,"Mesa(s) de origem e/ou destino inexistente(s)");
+      }
     }else{
-      res.status(500).json({
-        "success": false,
-        "message":"As mesas deve ser diferentes"
-      });
+      requestStatus(res,500,false,"As mesas deve ser diferentes");
     }
   }else{
-    res.status(500).json({
-      "success": false,
-      "message":"Parametros requeridos"
-    });
+    requestStatus(res,500,false,"Parâmetros requeridos");
   }
-
 });
 
 app.listen(port, function () {
@@ -368,7 +359,47 @@ app.listen(port, function () {
 });
 
 
+function requestStatus(res,stNumber,stBool,msg){
+  res.status(stNumber).json({
+    "success": stBool,
+    "message":msg
+  });
+}
 
+
+function changeListProductTable(tableList,indexTableFrom,indexTableTo,productList){
+  
+  for(let i = 0; i < productList.length; i++){
+    // retirar produtos
+    indexDelProduct = tableList[indexTableFrom]['products'].findIndex(prod => prod['productId'] === productList[i]['productId']);
+    tableList[indexTableFrom]['products'].splice(indexDelProduct,1);
+    // inclui produtos
+    var products = [];
+    if(typeof tableList[indexTableTo]['products'] == "undefined"){
+      
+      products.push(productList[i]);
+      
+      tableList[indexTableTo]['products'] = products;
+    }else{
+      products = tableList[indexTableTo]['products'];
+      products.push(productList[i]);
+    }
+  }
+  
+  if(tableList[indexTableFrom]['products'].length == 0){
+    tableList[indexTableFrom]['status'] = 0;
+    tableList[indexTableFrom]['total'] = "0.00";
+    delete tableList[indexTableFrom]['products'];
+  }else{
+    tableList[indexTableFrom]==calculateTableTotal(tableList[indexTableFrom]);
+  }
+  tableList[indexTableTo]['status'] = 1;
+  tableList[indexTableTo]=calculateTableTotal(tableList[indexTableTo]);
+
+  return tableList;
+
+}
+// Refactor Code End
 function makeId(length){
   var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
