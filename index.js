@@ -105,6 +105,51 @@ function print(text){
 
 
 // Serviços
+app.get('/', (request, res) => {
+  var requestIp = require('request-ip');
+  var clientIp = requestIp.getClientIp(request);
+  console.log(clientIp);
+  res.send(`Your IP is: ${clientIp}`);
+})
+
+app.get("/sysrest/api/datahora", async function (req, res) {
+  let date_ob = new Date();
+  let date = ("0" + date_ob.getDate()).slice(-2);
+  let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+  let year = date_ob.getFullYear();
+  let hours = date_ob.getHours();
+  let minutes = date_ob.getMinutes();
+  let seconds = date_ob.getSeconds();
+  let formatDate =
+    date +
+    "/" +
+    month +
+    "/" +
+    year +
+    " " +
+    hours +
+    ":" +
+    minutes +
+    ":" +
+    seconds;
+  res.send({ status: "success", resultado: formatDate });
+});
+
+app.post("/sysrest/api/login", async function (req, res) {
+  var fs = require('fs');
+  let rawdata = fs.readFileSync('users.json');
+
+  let users = JSON.parse(rawdata);
+  let hasClient = false;
+  let authenticated = users.find(u => u['codOp'] === req.body.codOp && u['password'] === req.body.password);
+  if(typeof authenticated !== "undefined"){
+    requestStatus(res,200,true,{ name: authenticated["name"], codOp: authenticated['codOp'] },"login feito com sucesso");
+  }else{
+    requestStatus(res,401,false,"Erro de usuário e/ou senha");
+  }
+
+});
+
 app.get("/sysrest/api/criar", async function (req, res) {
   if(req.query.qtd != null && req.query.op != null){
     var qtd = req.query.qtd;
@@ -412,7 +457,6 @@ app.post("/sysrest/api/changeProduct", async function (req, res) {
     requestStatus(res,500,false,"Parâmetros requeridos");
   }
 });
-
 
 
 

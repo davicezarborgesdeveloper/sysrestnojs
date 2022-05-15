@@ -2,22 +2,8 @@
   {
     "number": "01",
     "lugares": 4,
-    "status": 1,
-    "total": "50.00",
-    "products": [
-      {
-        "productId": "cca53d6f-3c82-4198-ba56-c83f0ad0b41f",
-        "code": "10",
-        "unitPrice": "10.00",
-        "qtd": 4
-      },
-      {
-        "productId": "b273365d-31c4-451f-99bc-85272818330f",
-        "code": "13",
-        "unitPrice": "2.50",
-        "qtd": 4
-      }
-    ]
+    "status": 0,
+    "total": "0.00"
   },
   {
     "number": "02",
